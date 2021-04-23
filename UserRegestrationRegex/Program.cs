@@ -8,6 +8,8 @@ namespace UserRegestrationRegex
         {
             Pattern pattern = new Pattern();
             Console.WriteLine("Welcome to User Registration Problem");
+            bool firstName = pattern.Check("Prashant");
+            Console.WriteLine("FirstName " + firstName);
         }
     }
 }
