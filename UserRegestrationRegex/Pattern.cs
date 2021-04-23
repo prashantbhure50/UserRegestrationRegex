@@ -11,7 +11,7 @@ namespace UserRegestrationRegex
         string regex = "^[A-Z][a-zA-Z]{2,}$";
         string emailregex = "^[a-zA-Z]{3}[.]([a-zA-z]{3})[@][a-zA-Z]{2}[.][a-zA-Z]{2}[.]([a-zA-Z]{2})";
         string mobileregex = "^[1-9]{2,2}[ ][0-9]{10}$";
-        string passwordemailregex = "(?=.*[A-Z]).{8,20}$";
+        string passwordemailregex = "(?=.*[0-9])(?=.*[A-Z]).{8,}$";
         public bool Check(string input)
         {
             return Regex.IsMatch(input, regex);
