@@ -16,6 +16,8 @@ namespace UserRegestrationRegex
             Console.WriteLine("Email " + email);
             bool mobile = pattern.MobileCheck("91 9876543210");
             Console.WriteLine("Mobile " + mobile);
+            bool password = pattern.PasswordEmailCheck("abcAdefghi");
+            Console.WriteLine("Password " + password);
         }
     }
 }
