@@ -8,15 +8,15 @@ namespace UserRegestrationRegex
         {
             Pattern pattern = new Pattern();
             Console.WriteLine("Welcome to User Registration Problem");
-            bool firstName = pattern.Check("Prashant");
+            bool firstName = pattern.firstNameCheck("Prashant");
             Console.WriteLine("FirstName " + firstName);
-            bool lastName = pattern.Check("Prashant");
+            bool lastName = pattern.lastNameCheck("Prashant");
             Console.WriteLine("LastName " + lastName);
             bool email = pattern.EmailCheck("abc.xyz@bl.co.in");
             Console.WriteLine("Email " + email);
             bool mobile = pattern.MobileCheck("91 9876543210");
             Console.WriteLine("Mobile " + mobile);
-            bool password = pattern.PasswordEmailCheck("abcA1defghi");
+            bool password = pattern.PasswordEmailCheck("abcdefghiA@1");
             Console.WriteLine("Password " + password);
         }
     }
